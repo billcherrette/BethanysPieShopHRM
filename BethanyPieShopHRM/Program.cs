@@ -13,13 +13,13 @@ string name = Console.ReadLine();
 */
 //string name2 = Console.ReadLine();
 
-//int monthlyWage = 1234;
+var monthlyWage = 1234;//implicit typing when the program is compiled the compiler will know what type this is, an integer.
 
 int months = 12, bonus = 1000;
 
-//bool isActive = true;
+var isActive = true;//implicit typing, based on the right hand side of the assignment operator (=). bool is inferred.
 
-//double rating = 99.25;
+double rating = 99.25;
 
 //byte numberOfEmployees = 300;
 /*
@@ -71,18 +71,33 @@ numberOfEmployees--;
 
 //bool isLetter = char.IsLetter(userSelection);
 
-DateTime hireDate = new DateTime(2022, 3, 28, 14, 30, 0);
-Console.WriteLine(hireDate);
+//DateTime hireDate = new DateTime(2022, 3, 28, 14, 30, 0);
+//Console.WriteLine(hireDate);
 
-DateTime exitDate = new DateTime(2025, 12, 11);
+//DateTime exitDate = new DateTime(2025, 12, 11);
 
-DateTime startDate = hireDate.AddDays(15);
+//DateTime startDate = hireDate.AddDays(15);
 
-DateTime currentDate = DateTime.Now;
-bool areWeInDst = currentDate.IsDaylightSavingTime();
+//DateTime currentDate = DateTime.Now;
+//bool areWeInDst = currentDate.IsDaylightSavingTime();
 
-DateTime startHour = DateTime.Now;
-TimeSpan workTime = new TimeSpan(8, 35, 0);
-DateTime endHour = startHour.Add(workTime);
+//DateTime startHour = DateTime.Now;
+//TimeSpan workTime = new TimeSpan(8, 35, 0);
+//DateTime endHour = startHour.Add(workTime);
+
+//Console.WriteLine(startHour.ToLongDateString());
+//Console.WriteLine(endHour.ToShortTimeString());
+
+int numberOfHoursWorked = 165;
+
+long veryLongMonth = numberOfHoursWorked;
+
+double d = 12345.0;
+
+int x = (int) d;//potential data loss because we're forcing a double into an integer type.
+
+int intVeryLongMonth = (int)veryLongMonth;//possible data los because a long may have two many numbers than an int can hold.
+
+
 
 Console.ReadLine(); 
