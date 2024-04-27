@@ -1,103 +1,145 @@
-﻿/*
- * multi line comment
- * comment
- * comment
- */
+﻿
+/*
+int age = 23;
+
+bool a = age == 23;
+
+
+Console.WriteLine("Age is 23: " + a);
+
+bool b = age >= 23;
+
+Console.WriteLine("Age is greater than 23: " + b);
+
+bool c = (age >= 18) && (age <= 65);
+Console.WriteLine("Age is between 18 and 65: " + c);
+
+int age1 = 16;
+int age2 = 64;
+bool d = (age1 >= 18) && (age2 <= 65);
+Console.WriteLine("Age1 is greater than 18 AND age2 is less than 65: " + d);
+bool e = (age1 >= 18)  || (age2 <= 65);
+Console.WriteLine("Age1 is greater than 18 OR age2 is less than 65: " + e);
+
+if(age < 18)
+{
+    Console.WriteLine("Too young to apply");
+}
+else
+{
+    Console.WriteLine("Great, you can start now with your application!");
+}
+*/
+/*
+Console.WriteLine("Enter the age of the new candidate: ");
+int age = int.Parse(Console.ReadLine());
+
+if (age < 18)
+{
+    Console.WriteLine("Too young to apply");
+    Console.WriteLine("Send email to candidate.");
+}
+else if (age > 65)
+{
+    Console.WriteLine("Too old to apply");
+    Console.WriteLine("Send email to candidate.");
+}
+else
+{
+    Console.WriteLine("Great, you can now start with the application!");
+}
+ 
+DateTime today = DateTime.Now;
+bool endOfMonthPaymentStarted = false;
+
+if (today.Date.Day == 20)
+{
+    Console.WriteLine("Please start end-of-month employee payments");
+}
+else if (today.Date.Day >= 25 && !endOfMonthPaymentStarted)
+{
+    Console.WriteLine("Payments will be late!");
+}
+
+switch (age)
+{
+    case < 18:
+    case > 65:
+        Console.WriteLine("Sorry, your age is not within the rangeg we are looking for");
+        break;
+    case 23:
+        Console.WriteLine("Wow, exactly what we are looking for");
+        break;
+    default:
+        Console.WriteLine("Great, you can now start with the application!");
+        break;
+}
+*/
+/*
+string selectedAction = "";
+
+do
+{
+    Console.WriteLine("Choose the action you want to do: ");
+    Console.WriteLine("1. Add employee");
+    Console.WriteLine("2. Update employee");
+    Console.WriteLine("3. Delete employee");
+    Console.WriteLine("99. Exit application");
+    selectedAction = Console.ReadLine();
+
+    switch (selectedAction)
+    {
+        case "1":
+            Console.WriteLine("Adding new employee ... ");
+            break;
+        case "2":
+            Console.WriteLine("Updating employee ... ");
+            break;
+        case "3":
+            Console.WriteLine("Deleting employee ... ");
+            break;
+        default:
+            Console.WriteLine("Invalid input");
+            break;
+    }
+
+} while (selectedAction != "99");
+
+Console.WriteLine("Closing Application");
+
+*/
+/*
+Console.WriteLine("Enter a value: ");
+int max = int.Parse(Console.ReadLine());
+int i = 0;
+
+while (i < max)
+{
+    Console.WriteLine(i);
+    i++;
+}
+
+Console.WriteLine("Loop Finished!");
+*/
+
 
 /*
-Console.WriteLine("Welcome to Bethany's Pie Shop HRM");
-
-Console.WriteLine("Please enter your name: ");
-
-string name = Console.ReadLine();
-*/
-//string name2 = Console.ReadLine();
-
-var monthlyWage = 1234;//implicit typing when the program is compiled the compiler will know what type this is, an integer.
-
-int months = 12, bonus = 1000;
-
-var isActive = true;//implicit typing, based on the right hand side of the assignment operator (=). bool is inferred.
-
-double rating = 99.25;
-
-//byte numberOfEmployees = 300;
-/*
-int hoursWorked;
-
-hoursWorked = 125;
-
-hoursWorked = 148;
-
-//monthlyWage = true;
-
-const double interestRate = 0.07;
-
-string firstName = "Bethany";
-string lastName = "Smith";
-
-string emptyString = "";
-
-Console.WriteLine("Please enter your name");
-string name = Console.ReadLine();
+for(int i = 0; i < 10; i++)
+{
+    Console.WriteLine(i);
+}
 */
 
-/*
-double ratePerHour = 12.34;
-int numberOfHoursWorked = 165;
+Console.WriteLine("enter a value: ");
+int max = int.Parse(Console.ReadLine());
 
-double currentMonthWage = ratePerHour * numberOfHoursWorked + bonus;    
-Console.WriteLine(currentMonthWage);
+for (int i = 0; i < max; i++)
+{
+    if (i == 5)
+    {
+        Console.WriteLine("Bingo! " + i + " was found!");
+        continue;
 
-ratePerHour += 3; // ratePerHour = ratePerHour + 3;
-Console.WriteLine(ratePerHour);
-
-if (currentMonthWage > 2000)
-    Console.WriteLine("Top Paid Employee");
-
-int numberOfEmployees = 15;
-numberOfEmployees--;
-*/
-//bool a;
-//int b;
-
-//int intMaxValue = int.MaxValue;
-//int intMinValue = int.MinValue;
-
-//char userSelection = 'a';
-//char upperVersion = char.ToUpper(userSelection);
-
-//bool isDigit = char.IsDigit(userSelection);
-
-//bool isLetter = char.IsLetter(userSelection);
-
-//DateTime hireDate = new DateTime(2022, 3, 28, 14, 30, 0);
-//Console.WriteLine(hireDate);
-
-//DateTime exitDate = new DateTime(2025, 12, 11);
-
-//DateTime startDate = hireDate.AddDays(15);
-
-//DateTime currentDate = DateTime.Now;
-//bool areWeInDst = currentDate.IsDaylightSavingTime();
-
-//DateTime startHour = DateTime.Now;
-//TimeSpan workTime = new TimeSpan(8, 35, 0);
-//DateTime endHour = startHour.Add(workTime);
-
-//Console.WriteLine(startHour.ToLongDateString());
-//Console.WriteLine(endHour.ToShortTimeString());
-
-int numberOfHoursWorked = 165;
-
-long veryLongMonth = numberOfHoursWorked;
-
-double d = 12345.0;
-
-int x = (int) d;//potential data loss because we're forcing a double into an integer type.
-
-int intVeryLongMonth = (int)veryLongMonth;//possible data los because a long may have two many numbers than an int can hold.
-
-
-
-Console.ReadLine(); 
+    }
+    Console.WriteLine(i);
+}
